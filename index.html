@@ -1,7 +1,17 @@
 <HTML>
 
-<HEAD>
+HEAD>
     <TITLE> Dr. Ebrahimi's Sunchoke Superfood Webpage</TITLE>
+    <script>
+        function displayDateTime() {
+            var dateObj = new Date();
+            var day = dateObj.getDate();
+            var month = dateObj.getMonth() + 1;
+            var year = dateObj.getFullYear();
+            var formattedDate = month + "/" + day + "/" + year;
+            document.getElementById("current-time").innerHTML = formattedDate;
+        }
+    </script> 
 </HEAD>
 
 <BODY BGCOLOR="#ccffcc"> 
@@ -49,47 +59,54 @@
                 </TD>
         </TR>
     </TABLE>
+<CENTER>
+    <TABLE BORDER=1 BGCOLOR="#e6ffe6" WIDTH="90%" CELLPADDING="10">
+        <TR>
+            <TD WIDTH="50%"><B>CORRECTNESS & CREDIBILITY:</B><BR><A HREF="http://www.groweatheal.com" target="_blank">Source Citation: www.groweatheal.com</A></TD>
+            <TD WIDTH="50%"><B>CURRENCY & CONTINUITY:</B><BR>Content Reviewed: <B>December 2025</B><BR>System Date (JS): <B ID="current-time"></B></TD>
+        </TR>
+        <TR>
+            <TD WIDTH="50%"><B>COVERAGE & COMPLETENESS:</B><BR>Full 7-tab navigation covers Health, Ethics, and Commerce.</TD>
+            <TD WIDTH="50%"><B>COMPARABILITY & COMPREHENSIVENESS:</B><BR>Data: Sunchoke Inulin (31.5%) vs. Banana (0.5%).</TD>
+        </TR>
+        <TR>
+            <TD WIDTH="50%"><B>CLARITY & CONSISTENCY:</B><BR>Always refer to Jerusalem Artichoke as the Sunchoke tuber.</TD>
+            <TD WIDTH="50%"><B>CONVENIENCE & COMMUNICATION:</B><BR>E-mail: <A HREF="mailto:ebrahimi@juno.com">ebrahimi@juno.com</A></TD>
+        </TR>
+        <TR>
+            <TD COLSPAN="2"><B>CUSTOMER SUPPORT & CARE:</B><BR>Dedicated **DIAGNOSTIC** and **SIMULATOR** pages for self-help.</TD>
+        </TR>
+    </TABLE>
 </CENTER>
-<BR>
 
-<H2> Health and Cultivation Facts </H2>
-<UL>
-    <LI> **Informative:** Rich in inulin, a natural carbohydrate that acts as a prebiotic. </LI>
-    <LI> **Diagnostic:** Use our tool to see if Sunchokes fit your dietary needs (e.g., low-FODMAP, diabetic). </LI>
-    <LI> **Simulation:** Calculate planting density and estimated yield for your garden size. </LI>
-    <LI> **Pattern Matching:** Analyze seasonal growth patterns for optimal harvest timing. </LI>
-</UL>
+<HR>
 
-<P>What is your favorite information area?</P>
-<SELECT NAME="Fruit"> 
-    <OPTION>Informative 
-    <OPTION>Diagnostic 
-    <OPTION>SImulation 
-    <OPTION>Pattern Matching 
-</SELECT>
+<CENTER>
+    <H2> Shop Sunchoke Tubers & Seeds </H2>
+    
+    <TABLE BORDER=1 BGCOLOR="#ffffff" WIDTH="60%" CELLPADDING="10">
+        <TR><TD>
+            <B>Sunchoke Tuber Starter Kit</B> - $19.99
+            <BR>
+            <A HREF="shopping_cart.html"> Add to Cart </A>
+            <BR><BR>
+            <FORM ACTION="https://www.paypal.com/cgi-bin/webscr" METHOD="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="FAKEID123">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            </FORM>
+        </TD></TR>
+    </TABLE>
+</CENTER>
+
 <BR><BR>
-
-<FORM METHOD="POST" ACTION="mailto:ebrahimi@juno.com">
-    Name: <INPUT TYPE="text" NAME="name" SIZE="15"><BR>
-    E-mail: <TEXTAREA NAME="email" ROWS=5 COLS=35></TEXTAREA>
-    <INPUT TYPE="submit" VALUE="send">
-</FORM>
-
-<BR><BR><BR>
 
 <HR>
 <P ALIGN="center">
     <FONT SIZE="-1">
-        Last Updated: <B>
-            <script>
-                var currentDate = new Date(),
-                    day = currentDate.getDate(),
-                    month = currentDate.getMonth() + 1,
-                    year = currentDate.getFullYear();
-
-                document.write(month + "/" + day + "/" + year);
-            </script>
-        </B>
+        &copy; 2025 Dr. Ebrahimi's Sunchoke E-Business.
+        <BR>
+        Last Updated: <B ID="current-time"></B>
     </FONT>
 </P>
 </BODY>
